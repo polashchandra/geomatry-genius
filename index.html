@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>geomatry</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div>
+            <div class="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-36">
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/triangle.png" alt=""></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Triangle</h2>
+                      <p>Area (A) =0.5 X b X h</p>
+                      <p>
+                        <input type="text" placeholder="b" class="border w-24 h-6" id="inputText"> <span> cm</span>
+                        <input type="text" placeholder="b" class="border w-24 h-6" id="heighttext"> <span> cm</span>
+                      </p>
+                      <p>Aria: <span> </span> </p>
+                      <div class="card-actions">
+                        <button onclick="clickhandle()" class="btn btn-primary w-full">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/triangle.png" alt=""></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/triangle.png" alt=""></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="area.js"></script>
+</body>
+</html>
