@@ -1,57 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>geomatry</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <header>
 
-    </header>
-    <main>
-        <div>
-            <div class="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-36">
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="images/triangle.png" alt=""></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Triangle</h2>
-                      <p>Area (A) =0.5 X b X h</p>
-                      <p>
-                        <input type="text" placeholder="b" class="border w-24 h-6" id="inputText"> <span> cm</span>
-                        <input type="text" placeholder="b" class="border w-24 h-6" id="heighttext"> <span> cm</span>
-                      </p>
-                      <p>Aria: <span> </span> </p>
-                      <div class="card-actions">
-                        <button onclick="clickhandle()" class="btn btn-primary w-full">Buy Now</button>
-                      </div>
-                    </div>
-                </div>
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="images/triangle.png" alt=""></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
-                      </div>
-                    </div>
-                </div>
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="images/triangle.png" alt=""></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
-                      </div>
-                    </div>
-                </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>geomatry</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <main>
+    <div>
+      <div class="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-36">
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="images/triangle.png" alt=""></figure>
+          <div class="card-body">
+            <h2 class="card-title">Triangle</h2>
+            <p>Area (A) =0.5 X b X h</p>
+            <p>
+              <input type="text" placeholder="b" class="border w-24 h-6" id="widthText"> <span> cm</span>
+              <input type="text" placeholder="b" class="border w-24 h-6" id="heighttext"> <span> cm</span>
+            </p>
+            <p class="text-2xl">Aria: <span id="vh-ariya"> </span> </p>
+            <div class="card-actions">
+              <button onclick="clickhandle()" class="btn btn-primary w-full">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="images/rectangle.png""></figure>
+                    <div class=" card-body">
+            <h2 class="card-title">Rectangle</h2>
+            <p>Area (A) = w x I</p>
+            <p>
+              <input type="text" placeholder="b" class="border w-24 h-6" id="inputwI1"> <span> cm</span>
+              <input type="text" placeholder="b" class="border w-24 h-6" id="inputwI2"> <span> cm</span>
+            </p>
+            <p class="text-2xl">Aria: <span id="wi-ariya1"> </span> </p>
+            <div class="card-actions">
+              <button onclick="Rectangle()" class="btn btn-primary w-full">Buy Now</button>
             </div>
         </div>
-    </main>
-    <script src="area.js"></script>
+      </div>
+      <div class="card w-96 bg-base-100 shadow-xl">
+        <figure><img src="images/parallelogram.png" alt=""></figure>
+        <div class="card-body">
+          <h2 class="card-title">parallelogram</h2>
+          <p>Area (A) = b X h</p>
+          <p>
+            <input type="text" placeholder="b" class="border w-24 h-6" id="inputpara"> <span> cm</span>
+            <input type="text" placeholder="b" class="border w-24 h-6" id="inputpara2"> <span> cm</span>
+          </p>
+          <p class="text-2xl">Aria: <span id="wi-ariya2"> </span> </p>
+          <div class="card-actions justify-end">
+            <button onclick="paralelogram()" class="btn btn-primary w-full">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- div section 2 -->
+    <div>
+      <div class="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-36">
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="images/rhombus.png" alt=""></figure>
+          <div class="card-body">
+            <h2 class="card-title">Rhombus</h2>
+            <p>Area (A) =0.5 X b X h</p>
+            <p>
+              <input type="text" placeholder="b" class="border w-24 h-6" id="rhombusinput"> <span> cm</span>
+              <input type="text" placeholder="b" class="border w-24 h-6" id="rhombusinput2"> <span> cm</span>
+            </p>
+            <p class="text-2xl">Aria: <span id="rhombus-ariya"> </span> </p>
+            <div class="card-actions">
+              <button onclick="Rhombus()" class="btn btn-primary w-full">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="images/pentagon.png""></figure>
+                    <div class=" card-body">
+            <h2 class="card-title">pentagon</h2>
+            <p>Area (A) = 0.5 Xw x I</p>
+            <p>
+              <input type="text" placeholder="b" class="border w-24 h-6" id="pentagon1"> <span> cm</span>
+              <input type="text" placeholder="b" class="border w-24 h-6" id="pentagon2"> <span> cm</span>
+            </p>
+            <p class="text-2xl">Aria: <span id="pentagon-ariya"> </span> </p>
+            <div class="card-actions">
+              <button onclick="pentagon()" class="btn btn-primary w-full">Buy Now</button>
+            </div>
+        </div>
+      </div>
+      <div class="card w-96 bg-base-100 shadow-xl">
+        <figure><img src="images/ellipse.png" alt=""></figure>
+        <div class="card-body">
+          <h2 class="card-title">ellipse</h2>
+          <p>Area (A) = Area (A) =  π ab</p>
+          <p>
+            <input type="text" placeholder="b" class="border w-24 h-6" id="ellipse-input1"> <span> cm</span>
+            <input type="text" placeholder="b" class="border w-24 h-6" id="ellipse-input2"> <span> cm</span>
+          </p>
+          <p class="text-2xl">Aria: <span id="ellipse-ariya"> </span> </p>
+          <div class="card-actions justify-end">
+            <button onclick="ellipse()" class="btn btn-primary w-full">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <script src="area.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>
